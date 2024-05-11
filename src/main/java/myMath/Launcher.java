@@ -2,7 +2,7 @@ package myMath;
 
 import myMath.UI.MultiplicationTableBoard;
 
-public class Main {
+public class Launcher {
         /**
 	 * Launch the application.
 	 */

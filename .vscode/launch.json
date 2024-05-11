@@ -14,7 +14,7 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
-            "mainClass": "myMath.Main",
+            "mainClass": "myMath/myMath.Launcher",
             "projectName": "myMath"
         }
     ]

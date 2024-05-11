@@ -49,7 +49,7 @@ public class MultiplicationTableBoard extends Application {
 		operations = new MultiplicationGenerator();
 		currentOperation = operations.NewMultiplication();
         Pane root = new Pane();
-		String imgPath = Main.class.getClassLoader().getResource("board.png").toString();
+		String imgPath = Launcher.class.getClassLoader().getResource("board.png").toString();
 		root.setBackground(new Background(new BackgroundImage(new Image(imgPath),
         	BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
           	new BackgroundSize(1380, 900, true, true, true, true))));
@@ -174,7 +174,12 @@ public class MultiplicationTableBoard extends Application {
 			}
 			return c;
 		};
-		textField.setTextFormatter(new TextFormatter(modifyChange));
+		try {
+			textField.setTextFormatter(new TextFormatter(modifyChange));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return textField;
 	}
 
