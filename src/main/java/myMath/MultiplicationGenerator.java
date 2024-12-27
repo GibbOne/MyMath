@@ -21,7 +21,7 @@ public class MultiplicationGenerator {
         {
             return operationToRepeatOften.poll();
         }
-        return new Multiplication(rand.nextInt(11), rand.nextInt(11));
+        return new Multiplication(rand.nextInt(2, 11), rand.nextInt(2, 11));
     }
 
     public void AddOperationToRepeatOften(Multiplication op)
